@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Merry Christmas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sacramento&family=Square+Peg&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --lucas: #bf2113;
+      --anastasia: #6dd66b;
+    }
+
+    body {
+	  font-family: "Architects Daughter", cursive;
+	  font-weight: 400;
+	  font-style: normal;
+	
+      margin: 0;
+      background: var(--bg);
+      color: var(--lucas);
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+	
+    .slide {
+      display: none;
+	  padding: 25px;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .text {
+      font-size: 5vh;
+	  line-height: 6vh;
+      margin: 0 2vw;
+	  text-align: center;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+	  font-family: "Square Peg", cursive;
+	  font-weight: 400;
+	  font-style: normal;
+		
+		font-size: 4.5vh;
+		position: fixed;
+		bottom: 2vh;
+		color: var(--bg);
+		background:  var(--anastasia);
+      appearance: none;
+      border: none;
+      border-radius: 10px;
+      width: 90%;
+      cursor: pointer;
+      transition: transform 0.05s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+	  box-shadow:
+        0 6px 16px rgba(187, 122, 214,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+
+  </style>
+</head>
+<body>
+  <section class="slideshow">
+  
+    <article class="slide active" data-index="0" >
+      <p class="text">
+        Merry Christmas Sweetheart!
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Merry Christmas!</button>
+      </div>
+    </article>
+	
+	<article class="slide active" data-index="1" >
+      <p class="text">
+        I love you very much.&#128151;
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">I love you too.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="2" >
+      <p class="text">
+        But I have a confession to make.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Ok...</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="3" >
+      <p class="text">
+        Remember how we agreed on a budget for Christmas gifts?
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Yes I do.</button>
+      </div>
+    </article>
+		
+	<article class="slide" data-index="4" >
+      <p class="text">
+        It was $500. That was a very reasonable budget.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Oh God, what did you do?</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="5" >
+      <p class="text">
+        I didn't break the rules! Technically, anyway.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Oh no?</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="6" >
+      <p class="text">
+        If you remember, we coincidentally had that conversation on September 11th.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">I'll never forget.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="7" >
+      <p class="text">
+        And the purchase that I made, I did that on the 10th. 
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Sure.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="8" >
+      <p class="text">
+        So technically, it wasn't against the rules.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Ok, but you could've told me...</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="9" >
+      <p class="text">
+		I wanted it to stay a surprise! You know I'm bad so bad at surprises, I wanted to not ruin this one.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">I guess, but you could've not gotten me anything else?</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="10" >
+      <p class="text">
+		I wanted you to have presents to open!
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">That's sweet, but still.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="11" >
+      <p class="text">
+		And how was I supposed to play off putting nothing under the tree?
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">I honestly wouldn't have thought anything of it.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="12" >
+      <p class="text">
+		If you want, we can say this isn't for Christmas? There are other holidays.
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Whatever, it doesn't matter.</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="13" >
+      <p class="text">
+		Hey, apropos of nothing, just I was wondering
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Yes?</button>
+      </div>
+    </article>
+	
+	<article class="slide" data-index="14" >
+      <p class="text">
+		No reason really...
+      </p>
+      <div class="controls">
+        <button type="button" class="btn next">Get on with it.</button>
+      </div>
+    </article>
+	
+
+    <article class="slide" data-index="15">
+      <p class="text">
+        Hey, um, are you busy on March 23rd?
+      </p>
+	  <div class="controls">
+        <button type="button" class="btn" onclick="window.location.href='https://calendar.google.com/calendar/u/1/r/day/2026/3/23'">Um, let me check</button>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    (function () {
+      const slides = Array.from(document.querySelectorAll(".slide"));
+      let index = 0;
+
+      function show(i) {
+        // Normalize and update index
+        index = (i + slides.length) % slides.length;
+
+        // Hide all, show active
+        slides.forEach((s, idx) => {
+          const active = idx === index;
+          s.classList.toggle("active", active);
+          s.style.display = active ? "block" : "none";
+          s.setAttribute("aria-hidden", active ? "false" : "true");
+        });
+      }
+
+      // Initialize visibility explicitly (CSS also handles this)
+      show(0);
+
+      // Click handlers for Next buttons
+      slides.forEach((slide, idx) => {
+        const btn = slide.querySelector(".next");
+        if (btn) {
+          btn.addEventListener("click", () => {
+            show(idx + 1);
+            // Move focus to the next slide's button for smoother keyboard flow
+            const nextSlide = slides[(idx + 1) % slides.length];
+            const nextBtn = nextSlide.querySelector(".next");
+            nextBtn && nextBtn.focus();
+          });
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>

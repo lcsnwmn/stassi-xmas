@@ -27,12 +27,9 @@
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
-	  height: 95vh;
+	  height: 100vh;
+	  overflow: hidden;
     }
-
-	.slideshow {
-		margin-top: -5vh;
-	}
 	
     .slide {
       display: none;
@@ -64,7 +61,7 @@
 		position: fixed;
 		bottom: 2vh;
 		color: var(--bg);
-		background:  var(--anastasia);
+		  background-image: linear-gradient(-180deg, #00D775, #00BD68);
       appearance: none;
       border: none;
       border-radius: 10px;
@@ -75,6 +72,10 @@
         0 6px 16px rgba(75, 153, 73,0.5),
         inset 0 1px 0 rgba(255,255,255,0.6);
     }
+	
+.btn:hover {
+  background: #00bd68;
+}
 
   </style>
 </head>
